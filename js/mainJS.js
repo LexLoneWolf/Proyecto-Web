@@ -1,4 +1,4 @@
 $(document).ready(function() {
 
-    $('#particles').particleground();
+    particlesJS.load('particles', 'js/particles.json');
 });
