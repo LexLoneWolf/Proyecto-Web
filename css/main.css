@@ -8,8 +8,7 @@ html {
 
 body {
   background-color: #292929;
-  position: relative;
-  z-index: 1; }
+  position: relative; }
 
 header {
   display: -webkit-box;
@@ -87,6 +86,14 @@ div.menu {
     font-size: 40px;
     color: white;
     text-shadow: 5px 4px 5px #000000; }
+
+#particles {
+  position: relative; }
+  #particles canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; }
 
 div.main-content {
   display: -webkit-box;
