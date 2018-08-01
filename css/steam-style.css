@@ -17,7 +17,7 @@ header {
   -ms-flex-pack: end;
   justify-content: flex-end;
   background-image: url("../img/steam.svg");
-  background-color: black;
+  background-color: #171a21;
   background-repeat: no-repeat;
   background-position: 50%;
   width: 100vw;
