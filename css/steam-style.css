@@ -97,5 +97,4 @@ div.menu {
   justify-content: center; }
   .genres .action, .genres .adventure, .genres .rol, .genres .strategy, .genres .multiplayer {
     width: 300px;
-    height: 200px;
-    border: 1px; }
+    height: 200px; }
