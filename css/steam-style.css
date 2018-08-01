@@ -1,37 +1,46 @@
-html{
+html {
+  overflow: scroll;
+  overflow-x: hidden; }
 
-    overflow: scroll;
-    overflow-x: hidden;
-}
-::-webkit-scrollbar {
+body {
+  position: relative;
+  background-color: #292929; }
 
-    width: 0px;  /* remove scrollbar space */
-    background: transparent;  /* optional: just make scrollbar invisible */
-}
-body{
-
-    background-color: rgb(41, 41, 41);
-    
-}
 header {
-    
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    background-image: url("../img/steamlogo1.jpg");
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 280px;
-    
-}
-@font-face {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  background-image: url("../img/steam.svg");
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  width: 100vw;
+  height: 280px; }
 
-    font-family: Montserrat-Light;
-    src: url("../fonts/Montserrat-Light.ttf");
-}
-input.searchbar {
-    
+@font-face {
+  font-family: Montserrat-Light;
+  src: url("../fonts/Montserrat-Light.ttf"); }
+
+h1 {
+  color: white;
+  font-family: Montserrat-Light;
+  font-size: 70px;
+  text-shadow: 5px 5px 6px #000000;
+  margin-bottom: 0; }
+
+.searchbar {
+  width: 350px;
+  height: 42px;
+  padding: 0 15% 30px 0; }
+  .searchbar input {
     width: 220px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 50px;
@@ -39,51 +48,54 @@ input.searchbar {
     font-family: Montserrat-Light;
     font-size: 15px;
     background-image: url("../img/searchIcon.png");
-    background-position: 10px 10px; 
+    background-position: 10px 10px;
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
     -webkit-transition: width 0.4s ease-in-out;
+    -o-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
-    opacity: 0.6;
-    
-}
-input.searchbar:hover {
+    opacity: 0.6; }
+    .searchbar input:hover {
+      width: 350px; }
 
-    width: 350px;
-}
 div.menu {
-
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    
-}
-div.platform  {
-
-    display: flex;
-    align-content: space-between;
-    justify-content: space-between;
-    width: 65%;
-}
-div.platform i {
-    
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -ms-flex-line-pack: space-evenly;
+  align-content: space-evenly;
+  background-color: rgba(41, 41, 41, 0.9);
+  padding: 30px 0% 5px 0%;
+  border: none;
+  width: 90%;
+  -webkit-box-shadow: 0 20px 20px -20px white;
+  box-shadow: 0 20px 20px -20px white;
+  margin: auto; }
+  div.menu i {
     font-size: 40px;
     color: white;
-    text-shadow: 5px 4px 5px #000000;
-    margin-bottom: 5px;
-}
-div.platform-line {
+    text-shadow: 5px 4px 5px #000000; }
+    div.menu i:hover {
+      color: darkgrey; }
 
-    width: 80%;
-}
-div.platform-line hr {
-
-    border:none;
-    height: 25px;
-	height: 50px;
-	margin-top: 0;
-	box-shadow: 0 20px 20px -20px white;
-    margin: -50px auto 10px; 
-}
+.genres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .genres .action, .genres .adventure, .genres .rol, .genres .strategy, .genres .multiplayer {
+    width: 300px;
+    height: 200px;
+    border: 1px; }
