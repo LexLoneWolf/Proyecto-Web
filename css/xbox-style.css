@@ -166,6 +166,10 @@ footer {
   .suggestions p {
     font-size: 20px;
     text-shadow: 2px 2px 4px #000000; }
+  .suggestions .calc-icon i {
+    font-size: 40px; }
+    .suggestions .calc-icon i:hover {
+      color: darkgrey; }
 
 .action, .adventure, .rol, .strategy, .multiplayer {
   width: 400px;
@@ -232,9 +236,7 @@ header {
   align-items: flex-end;
   background-image: url("../img/xbox.svg");
   background-repeat: no-repeat;
-  background-color: #171a21;
-  background-position-y: 10px;
-  background-position-x: -150px; }
+  background-color: #171a21; }
 
 .searchbar {
   width: 220px;
@@ -252,11 +254,10 @@ header {
     background-image: url("../img/searchIcon.png");
     background-position: 10px 10px;
     background-repeat: no-repeat;
-    background-color: darkgray;
     padding: 12px 20px 12px 40px;
     -webkit-transition: width 0.4s ease-in-out;
     -o-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
-    opacity: 1; }
+    opacity: 0.6; }
     .searchbar input:hover {
       width: 350px; }

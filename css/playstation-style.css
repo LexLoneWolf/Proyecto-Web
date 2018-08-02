@@ -166,6 +166,10 @@ footer {
   .suggestions p {
     font-size: 20px;
     text-shadow: 2px 2px 4px #000000; }
+  .suggestions .calc-icon i {
+    font-size: 40px; }
+    .suggestions .calc-icon i:hover {
+      color: darkgrey; }
 
 .action, .adventure, .rol, .strategy, .multiplayer {
   width: 400px;
