@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Montserrat-Light;
+  src: url("../fonts/Montserrat-Light.ttf"); }
+
 html {
   overflow: scroll;
   overflow-x: hidden; }
@@ -5,18 +9,15 @@ html {
 body {
   background-color: #292929;
   position: relative; }
+  body p, body h1, body h2 {
+    font-family: Montserrat-Light; }
 
 header {
   width: 100vw;
   height: 280px; }
 
-@font-face {
-  font-family: Montserrat-Light;
-  src: url("../fonts/Montserrat-Light.ttf"); }
-
 h1 {
   color: white;
-  font-family: Montserrat-Light;
   font-size: 70px;
   text-shadow: 5px 5px 6px #000000;
   margin-bottom: 0; }
@@ -49,14 +50,6 @@ h1 {
     .menu i:hover {
       color: darkgrey; }
 
-#particles {
-  position: relative; }
-  #particles canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1; }
-
 .main-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,7 +72,6 @@ h1 {
   width: 100vw;
   margin: 50px 0 80px 0; }
   .game-title h2 {
-    font-family: Montserrat-Light;
     font-size: 40px;
     text-shadow: 2px 2px 4px #000000;
     color: white;
@@ -119,7 +111,6 @@ a {
     color: darkgray; }
 
 .emphasize {
-  font-family: Montserrat-Light;
   font-size: 28px;
   text-shadow: 2px 2px 4px #000000;
   text-align: initial;
@@ -127,7 +118,6 @@ a {
   color: white; }
 
 .description {
-  font-family: Montserrat-Light;
   font-size: 18px;
   text-shadow: 2px 2px 4px #000000;
   color: white;
@@ -174,7 +164,6 @@ footer {
   box-shadow: 0 20px 20px -20px white;
   margin: auto; }
   .suggestions p {
-    font-family: Montserrat-Light;
     font-size: 20px;
     text-shadow: 2px 2px 4px #000000; }
 
@@ -183,7 +172,6 @@ footer {
   height: 250px;
   border: 1px solid white; }
   .action p, .adventure p, .rol p, .strategy p, .multiplayer p {
-    font-family: Montserrat-Light;
     font-size: 20px;
     text-align: center;
     color: white; }
@@ -221,6 +209,14 @@ footer {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 30px 20% 0 20%; }
+
+#particles {
+  position: relative; }
+  #particles canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; }
 
 header {
   display: -webkit-box;

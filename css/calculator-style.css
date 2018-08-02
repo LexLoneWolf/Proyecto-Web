@@ -1,49 +1,48 @@
-body {
-    display: flex;
-    align-content: center;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(41, 41, 41)
-}
-div.main {
-    
-    position: relative;
-    width: 435px;
-    top: 80px;
-    left: 30%;
-    padding: 20px;
-    background-color: darkgrey;
-    border-radius: 4%;
-    border-bottom-right-radius: 10%; 
-    
-}
-input.button {
-
-    width: 100px;
-    height: 100px;
-    font-size: 50px;
-    margin: 2px;
-    cursor: pointer;
-    background-color: #56638A;
-    color: lightskyblue;
-    border-width: 2px;
-    border-radius: 25px;
-    border-color: blue;
-} 
 @font-face {
-    font-family: digital;
-    src: url("../fonts/digital.ttf");
-}
-input#display {
+  font-family: digital;
+  src: url("../fonts/digital.ttf"); }
 
-    background-color: #63A088;
-    width: 400px;
-    margin: 15px;
-    font-family: digital;
-    font-size: 60px;
-    color: lightgray;
-    padding: 5px;
-    text-align: right;
-    border-radius: 20%;
-}
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 8%;
+  background-color: #292929; }
 
+.main {
+  width: 435px;
+  padding: 20px;
+  background-color: darkgrey;
+  border-radius: 4%;
+  border-bottom-right-radius: 10%; }
+
+.button {
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+  margin: 2px;
+  cursor: pointer;
+  background-color: #56638A;
+  color: lightskyblue;
+  border-width: 2px;
+  border-radius: 25px;
+  border-color: blue; }
+
+#display {
+  background-color: #63A088;
+  width: 400px;
+  margin: 15px;
+  font-family: digital;
+  font-size: 60px;
+  color: lightgray;
+  padding: 5px;
+  text-align: right;
+  border-radius: 20%; }
