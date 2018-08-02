@@ -49,6 +49,14 @@ h1 {
     .menu i:hover {
       color: darkgrey; }
 
+#particles {
+  position: relative; }
+  #particles canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; }
+
 .main-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -155,6 +163,9 @@ footer {
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 40px 0 20px 0;
   height: 80px;
   border: none;
@@ -203,11 +214,3 @@ input.searchbar {
   margin-top: 50px; }
   input.searchbar:hover {
     width: 350px; }
-
-#particles {
-  position: relative; }
-  #particles canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1; }

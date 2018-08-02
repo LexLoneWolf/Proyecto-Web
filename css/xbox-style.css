@@ -49,6 +49,14 @@ h1 {
     .menu i:hover {
       color: darkgrey; }
 
+#particles {
+  position: relative; }
+  #particles canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; }
+
 .main-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -155,6 +163,9 @@ footer {
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 40px 0 20px 0;
   height: 80px;
   border: none;
@@ -167,21 +178,49 @@ footer {
     font-size: 20px;
     text-shadow: 2px 2px 4px #000000; }
 
-.genres {
+.action, .adventure, .rol, .strategy, .multiplayer {
+  width: 400px;
+  height: 250px;
+  border: 1px solid white; }
+  .action p, .adventure p, .rol p, .strategy p, .multiplayer p {
+    font-family: Montserrat-Light;
+    font-size: 20px;
+    text-align: center;
+    color: white; }
+
+.genres1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding: 80px 10% 0 10%; }
-  .genres .action, .genres .adventure, .genres .rol, .genres .strategy, .genres .multiplayer {
-    width: 500px;
-    height: 300px; }
+  padding: 120px 10% 0 10%; }
+
+.genres2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 30px 20% 0 20%; }
 
 header {
   display: -webkit-box;
@@ -197,8 +236,9 @@ header {
   align-items: flex-end;
   background-image: url("../img/xbox.svg");
   background-repeat: no-repeat;
-  background-color: lightgrey;
-  background-position-y: 20px; }
+  background-color: #171a21;
+  background-position-y: 10px;
+  background-position-x: -150px; }
 
 .searchbar {
   width: 220px;
