@@ -2,23 +2,23 @@
 
 +main-structure
 +platform-grid
-            
-header
 
+header 
+    
     display: flex
-    align-items: center
-    justify-content: flex-end
-    flex-direction: column
-    background-image: url("../img/steam.svg")
-    background-color: rgb(23,26,33)
+    align-content: center
+    justify-content: center
+    align-items: flex-end
+    background-image: url("../img/xbox.svg")
     background-repeat: no-repeat
-    background-position: 50%
+    background-color: lightgrey
+    background-position-y: 20px
 
 .searchbar   
 
     width: 220px
     height: 42px
-    padding: 0 0 30px 330px
+    padding-bottom: 10px
 
     input
 
@@ -32,10 +32,11 @@ header
         background-image: url("../img/searchIcon.png")
         background-position: 10px 10px 
         background-repeat: no-repeat
+        background-color: darkgray
         padding: 12px 20px 12px 40px
         -webkit-transition: width 0.4s ease-in-out
         transition: width 0.4s ease-in-out
-        opacity: 0.6
+        opacity: 1
         
         &:hover 
 

@@ -7,23 +7,8 @@ body {
   position: relative; }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background-image: url("../img/fox.jpg");
-  background-repeat: no-repeat;
   width: 100vw;
-  height: 280px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column; }
+  height: 280px; }
 
 @font-face {
   font-family: Montserrat-Light;
@@ -36,28 +21,7 @@ h1 {
   text-shadow: 5px 5px 6px #000000;
   margin-bottom: 0; }
 
-input.searchbar {
-  width: 220px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 50px;
-  border: none;
-  font-family: Montserrat-Light;
-  font-size: 15px;
-  background-image: url("../img/searchIcon.png");
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  padding: 12px 20px 12px 40px;
-  -webkit-transition: width 0.4s ease-in-out;
-  -o-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
-  opacity: 0.6;
-  margin-top: 50px; }
-  input.searchbar:hover {
-    width: 350px; }
-
-div.menu {
+.menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,20 +42,14 @@ div.menu {
   -webkit-box-shadow: 0 20px 20px -20px white;
   box-shadow: 0 20px 20px -20px white;
   margin: auto; }
-  div.menu i {
+  .menu i {
     font-size: 40px;
     color: white;
     text-shadow: 5px 4px 5px #000000; }
+    .menu i:hover {
+      color: darkgrey; }
 
-#particles {
-  position: relative; }
-  #particles canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1; }
-
-div.main-content {
+.main-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,7 +59,7 @@ div.main-content {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
-div.game-title {
+.game-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,28 +70,28 @@ div.game-title {
   align-content: center;
   width: 100vw;
   margin: 50px 0 80px 0; }
-  div.game-title h2 {
+  .game-title h2 {
     font-family: Montserrat-Light;
     font-size: 40px;
     text-shadow: 2px 2px 4px #000000;
     color: white;
     margin-bottom: 25px; }
 
-div.game-logo {
+.game-logo {
   padding: 0px 10px 0 10px; }
-  div.game-logo video {
+  .game-logo video {
     background-image: url("../img/evoland2L2.jpg");
     width: 720px;
     height: 407px; }
 
-div.game-description {
+.game-description {
   width: 500px;
   overflow-x: hidden;
   padding-right: 20px;
   height: 407px;
   background-color: rgba(41, 41, 41, 0.9); }
 
-div.description-list1 {
+.description-list1 {
   -ms-flex-line-pack: center;
   align-content: center;
   -webkit-box-pack: center;
@@ -152,7 +110,7 @@ a {
   a:hover {
     color: darkgray; }
 
-p.emphasize {
+.emphasize {
   font-family: Montserrat-Light;
   font-size: 28px;
   text-shadow: 2px 2px 4px #000000;
@@ -160,7 +118,7 @@ p.emphasize {
   margin-bottom: 5px;
   color: white; }
 
-p.description {
+.description {
   font-family: Montserrat-Light;
   font-size: 18px;
   text-shadow: 2px 2px 4px #000000;
@@ -208,3 +166,48 @@ footer {
     font-family: Montserrat-Light;
     font-size: 20px;
     text-shadow: 2px 2px 4px #000000; }
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-image: url("../img/fox.jpg");
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+input.searchbar {
+  width: 220px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 50px;
+  border: none;
+  font-family: Montserrat-Light;
+  font-size: 15px;
+  background-image: url("../img/searchIcon.png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  -o-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  opacity: 0.6;
+  margin-top: 50px; }
+  input.searchbar:hover {
+    width: 350px; }
+
+#particles {
+  position: relative; }
+  #particles canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; }
