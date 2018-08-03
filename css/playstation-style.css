@@ -212,6 +212,19 @@ footer {
     left: 0;
     z-index: -1; }
 
+@font-face {
+  font-family: Montserrat-Light;
+  src: url("../fonts/Montserrat-Light.ttf"); }
+
+h1, h2, p {
+  font-family: Montserrat-Light; }
+
+h1 {
+  text-shadow: 5px 5px 6px #000000; }
+
+h2, p {
+  text-shadow: 2px 2px 4px #000000; }
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
