@@ -1,9 +1,9 @@
-@import main-structure.sass
+@import main-structure
 
 +main-structure
 +text-font
++particles
 
-    
 header 
 
     display: flex
@@ -33,24 +33,13 @@ input.searchbar
 
         width: 350px
 
-#particles
+.game-logo
 
-    position: relative
-    display: flex
-    justify-content: center
-    align-items: center
-    flex-direction: column
-
-    canvas
-
-        position: absolute
-        top: 0
-        left: 0
-        z-index: 0
-
-// footer
-//     position: relative
-//     height: 200px
-//     width 100vw
-//     z-index: 1
-    
+    padding: 0px 10px 0 10px
+    video
+        
+        background-image: url('../img/evoland-d.jpg')
+        background-color: white
+        &:hover
+            cursor: pointer
+            opacity: 0.9

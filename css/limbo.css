@@ -161,57 +161,6 @@ footer {
     .suggestions .calc-icon i:hover {
       color: darkgrey; }
 
-.action, .adventure, .rol, .strategy, .multiplayer {
-  width: 400px;
-  height: 250px;
-  border: 1px solid white; }
-  .action p, .adventure p, .rol p, .strategy p, .multiplayer p {
-    font-size: 20px;
-    text-align: center;
-    color: white; }
-
-.genres1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: justify;
-  align-content: space-between;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding: 120px 10% 0 10%; }
-
-.genres2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: justify;
-  align-content: space-between;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding: 30px 20% 0 20%; }
-
-#particles {
-  position: relative; }
-  #particles canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1; }
-
 @font-face {
   font-family: Montserrat-Light;
   src: url("../fonts/Montserrat-Light.ttf"); }
@@ -225,42 +174,56 @@ h1 {
 h2, p {
   text-shadow: 2px 2px 4px #000000; }
 
+#particles {
+  position: relative; }
+  #particles canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; }
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-  align-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  background-image: url("../img/xbox.svg");
-  background-repeat: no-repeat;
-  background-color: #171a21; }
+  background-image: url("../img/fox.jpg");
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
 
-.searchbar {
+input.searchbar {
   width: 220px;
-  height: 42px;
-  padding-bottom: 10px; }
-  .searchbar input {
-    width: 220px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 50px;
-    border: none;
-    font-family: Montserrat-Light;
-    font-size: 15px;
-    background-image: url("../img/searchIcon.png");
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    -o-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-    opacity: 0.6; }
-    .searchbar input:hover {
-      width: 350px; }
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 50px;
+  border: none;
+  font-family: Montserrat-Light;
+  font-size: 15px;
+  background-image: url("../img/searchIcon.png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  -o-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  opacity: 0.6;
+  margin-top: 50px; }
+  input.searchbar:hover {
+    width: 350px; }
+
+.game-logo {
+  padding: 0px 10px 0 10px; }
+  .game-logo video {
+    background-image: url("../img/limbo-d.jpg");
+    background-color: white; }
+    .game-logo video:hover {
+      cursor: pointer;
+      opacity: 0.9; }
