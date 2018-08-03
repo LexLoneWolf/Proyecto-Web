@@ -2,6 +2,7 @@
 
 +main-structure
 +particles
++text-font
     
 header 
 
@@ -32,5 +33,45 @@ input.searchbar
 
         width: 350px
 
+#particles
+
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+    canvas
+
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 0
+
+.main-content
+
+    width: 980px
+    height: 490px
+    z-index: 1
+    padding: 70px 0 0 0
 
 
+.slider
+
+    display: flex
+    align-content: center
+    justify-content: center
+    align-items: center
+    video
+
+        background-image: url(../img/evoland.jpg)
+        width 860px
+        height: 486px
+        src: url("https://www.youtube.com/watch?v=oB19vpCXttU")
+
+footer
+    position: relative
+    height: 220px
+    width 100vw
+    z-index: 1
+    
