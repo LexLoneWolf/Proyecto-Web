@@ -23,6 +23,21 @@
 /* Hide the images by default */
 .mySlides 
     display: none
+    img
+        box-shadow: 0 0 25px 0px #000000
+        -webkit-filter: contrast(100%)
+        -webkit-transition: all 1s ease
+        -moz-transition: all 1s ease
+        -o-transition: all 1s ease
+        -ms-transition: all 1s ease
+        transition: all 0.5s ease
+        &:hover
+            -webkit-filter: contrast(115%)
+            -webkit-transform: scale(1.1)
+            -ms-transform: scale(1.05)
+            transform: scale(1.05)
+            transition: 0.5s ease
+            
     
 
 /* Next & previous buttons */
@@ -76,6 +91,9 @@
 
 /* The dots/bullets/indicators */
 .dot 
+
+    position: relative
+    top: 100px
     cursor: pointer
     height: 15px
     width: 15px
