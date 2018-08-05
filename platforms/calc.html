@@ -4,13 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+    integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/calc-style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
     <title>Calculator</title>
+    <script src="../js/particles.js"></script>
+    <script src="../js/main.js"></script>
 
 </head>
 
 <body>
+
+    <header>
+
+        <div>
+            <a href="../index.html"><h1>GAME ME NOW</h1></a>
+        </div> 
+    
+        <div>
+    
+            <form action="../platforms/search.html" method="POST">
+                <input class="searchbar" type="text" placeholder="Search...">
+            </form>
+    
+        </div>
+    
+        <div class="menu">
+        
+            <a href="../index.html" target="_self"><i class="fas fa-home"></i></a>
+            <a href="../platforms/steam.html" target="_self"><i class="fab fa-steam-symbol"></i></a>
+            <a href="../platforms/xbox.html" target="_self"><i class="fab fa-xbox"></i></a>
+            <a href="../platforms/playstation.html"><i class="fab fa-playstation"></i></a>
+            <a href="../platforms/google.html"><i class="fab fa-google-play"></i></a>
+                         
+        </div>
+            
+    </header>
+
+<div id="particles">
     
     <div class="main">
         <form id="calc">
@@ -50,7 +83,28 @@
             </table>
 
     </div>
+
+</div>    
+
+<footer>
+
+    <div class="main-cont-end">
+    
+    </div>
+    
+    <div class="suggestions">
+    
+        <p><a href="">Suggestions</a></p>
+    
+        <div class="calc-icon"><a href="../platforms/calc.html"><i class="fas fa-calculator"></i></a>
+        </div>
+    
+    </div>
+    
+</footer>
     
 <script src="../js/calculator.js"></script>
+
 </body>
+    
 </html>
