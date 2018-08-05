@@ -1,4 +1,4 @@
-@import main-structure
+@import mixins.sass
 
 +main-structure
 +text-font
@@ -12,39 +12,39 @@ header
     background-image: url("../img/fox.jpg")
     flex-direction: column
 
-input.searchbar 
+    .searchbar 
     
-    width: 220px
-    box-sizing: border-box
-    border: 2px solid #ccc
-    border-radius: 50px
-    border: none
-    font-family: Montserrat-Light
-    font-size: 15px
-    background-image: url("../img/searchIcon.png")
-    background-position: 10px 10px 
-    background-repeat: no-repeat
-    padding: 12px 20px 12px 40px
-    -webkit-transition: width 0.4s ease-in-out
-    transition: width 0.4s ease-in-out
-    opacity: 0.6
-    margin-top: 50px
-    &:hover 
+        width: 300px
+        box-sizing: border-box
+        border: 2px solid #ccc
+        border-radius: 50px
+        border: none
+        font-family: Montserrat-Light
+        font-size: 15px
+        background-image: url("../img/searchIcon.png")
+        background-position: 10px 10px 
+        background-repeat: no-repeat
+        padding: 12px 20px 12px 40px
+        -webkit-transition: width 0.4s ease-in-out
+        transition: width 0.4s ease-in-out
+        opacity: 0.6
+        margin-top: 40px
+        &:hover 
 
-        width: 350px
+            width: 370px
 
-.game-logo
+body .main-content .game-logo
 
     padding: 0px 10px 0 10px
     video
-
         height: 360px
         background-image: url('../img/hollow-knight-d.jpg')
-        background-repeat: no-repeat
+        
         &:hover
             cursor: pointer
             opacity: 0.9
 
-.menu
+body header .menu
 
     margin-top: 30px
+

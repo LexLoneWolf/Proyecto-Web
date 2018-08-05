@@ -6,5 +6,5 @@ function event1(x){
     document.getElementById("display").value = eval(x);
 }
     function resetf() {
-    $("#display")[0].reset();
+    $("#calc")[0].reset();
 }

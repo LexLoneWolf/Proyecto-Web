@@ -38,149 +38,144 @@ html {
       -webkit-box-shadow: 0 20px 20px -20px #ffffff;
       box-shadow: 0 20px 20px -20px #ffffff; }
       html body .menu i {
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        transition: all 0.5s ease;
         font-size: 40px;
         color: white;
         text-shadow: 5px 4px 5px #000000; }
         html body .menu i:hover {
-          color: darkgrey; }
-
-.main-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  padding: 50px 8% 0 8%;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
-
-.game-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  width: 100vw;
-  margin: 15px 0 80px 0; }
-  .game-title h2 {
-    font-size: 50px;
-    text-shadow: 2px 2px 4px #000000;
-    color: white;
-    margin-bottom: 25px; }
-
-.game-logo {
-  padding: 0px 10px 0 10px; }
-  .game-logo video {
-    width: 720px;
-    height: 407px;
-    -webkit-box-shadow: 0 0 25px 0px #000000;
-    box-shadow: 0 0 25px 0px #000000;
-    -webkit-filter: contrast(100%);
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease; }
-    .game-logo video:hover {
-      -webkit-filter: contrast(115%);
-      -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.05);
-      transform: scale(1.05);
-      -webkit-transition: 0.5s ease;
-      -o-transition: 0.5s ease;
-      transition: 0.5s ease; }
-
-.game-description {
-  width: 500px;
-  overflow-x: hidden;
-  padding-right: 20px;
-  height: 407px; }
-
-.description-list1 {
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 410px; }
-
-a {
-  color: white;
-  text-decoration: none; }
-  a:hover {
-    color: darkgray; }
-
-.emphasize {
-  font-size: 28px;
-  text-shadow: 2px 2px 4px #000000;
-  text-align: initial;
-  margin-bottom: 5px;
-  color: white; }
-
-.description {
-  font-size: 18px;
-  text-shadow: 2px 2px 4px #000000;
-  color: white;
-  width: 500px;
-  text-align: left; }
-
-footer {
-  height: 220px; }
-
-.main-cont-end {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 50px;
-  border: none;
-  width: 100%;
-  -webkit-box-shadow: 0 20px 20px -20px white;
-  box-shadow: 0 20px 20px -20px white;
-  margin: auto; }
-
-.suggestions {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: space-evenly;
-  align-content: space-evenly;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 40px 0 20px 0;
-  border: none;
-  width: 100%;
-  -webkit-box-shadow: 0 20px 20px -20px white;
-  box-shadow: 0 20px 20px -20px white;
-  margin: auto; }
-  .suggestions p {
-    font-size: 15px; }
-  .suggestions .calc-icon i {
-    font-size: 25px; }
-    .suggestions .calc-icon i:hover {
-      color: darkgrey; }
+          -webkit-transform: scale(1.3);
+          -ms-transform: scale(1.3);
+          transform: scale(1.3);
+          -webkit-transition: 0.5s ease;
+          -o-transition: 0.5s ease;
+          transition: 0.5s ease;
+          cursor: pointer; }
+  html .main-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding: 50px 8% 0 8%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    html .main-content .game-title {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-line-pack: center;
+      align-content: center;
+      width: 100vw;
+      margin: 15px 0 80px 0; }
+      html .main-content .game-title h2 {
+        font-size: 50px;
+        text-shadow: 2px 2px 4px #000000;
+        color: white;
+        margin-bottom: 25px; }
+    html .main-content .game-logo {
+      padding: 0px 10px 0 10px; }
+      html .main-content .game-logo video {
+        width: 720px;
+        height: 407px;
+        -webkit-box-shadow: 0 0 25px 0px #000000;
+        box-shadow: 0 0 25px 0px #000000;
+        -webkit-filter: contrast(100%);
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        transition: all 0.5s ease; }
+        html .main-content .game-logo video:hover {
+          -webkit-filter: contrast(115%);
+          -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.05);
+          transform: scale(1.05);
+          -webkit-transition: 0.5s ease;
+          -o-transition: 0.5s ease;
+          transition: 0.5s ease; }
+    html .main-content .game-description {
+      width: 500px;
+      overflow-x: hidden;
+      padding-right: 20px;
+      height: 407px; }
+      html .main-content .game-description .description-list1 {
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        text-align: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 410px; }
+        html .main-content .game-description .description-list1 a {
+          color: white;
+          text-decoration: none;
+          color: darkgray; }
+        html .main-content .game-description .description-list1 .emphasize {
+          font-size: 28px;
+          text-shadow: 2px 2px 4px #000000;
+          text-align: initial;
+          margin-bottom: 5px;
+          color: white; }
+        html .main-content .game-description .description-list1 .description {
+          font-size: 18px;
+          text-shadow: 2px 2px 4px #000000;
+          color: white;
+          width: 500px;
+          text-align: left; }
+  html footer {
+    height: 220px; }
+  html .main-cont-end {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 50px;
+    border: none;
+    width: 100%;
+    -webkit-box-shadow: 0 20px 20px -20px white;
+    box-shadow: 0 20px 20px -20px white;
+    margin: auto; }
+  html .suggestions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: space-evenly;
+    align-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 40px 0 20px 0;
+    border: none;
+    width: 100%;
+    -webkit-box-shadow: 0 20px 20px -20px white;
+    box-shadow: 0 20px 20px -20px white;
+    margin: auto; }
+    html .suggestions .calc-icon i {
+      font-size: 25px; }
 
 @font-face {
   font-family: Montserrat-Light;
   src: url("../fonts/Montserrat-Light.ttf"); }
 
-h1, h2, p {
+h1, h2, p, a {
   font-family: Montserrat-Light; }
 
 h1 {
@@ -188,6 +183,10 @@ h1 {
 
 h2, p {
   text-shadow: 2px 2px 4px #000000; }
+
+a {
+  color: white;
+  text-decoration: none; }
 
 #particles {
   position: relative; }
@@ -212,37 +211,35 @@ header {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
+  header .searchbar {
+    width: 300px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    border: none;
+    font-family: Montserrat-Light;
+    font-size: 15px;
+    background-image: url("../img/searchIcon.png");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    -o-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    opacity: 0.6;
+    margin-top: 40px; }
+    header .searchbar:hover {
+      width: 370px; }
 
-input.searchbar {
-  width: 220px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 50px;
-  border: none;
-  font-family: Montserrat-Light;
-  font-size: 15px;
-  background-image: url("../img/searchIcon.png");
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  padding: 12px 20px 12px 40px;
-  -webkit-transition: width 0.4s ease-in-out;
-  -o-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
-  opacity: 0.6;
-  margin-top: 50px; }
-  input.searchbar:hover {
-    width: 350px; }
-
-.game-logo {
+body .main-content .game-logo {
   padding: 0px 10px 0 10px; }
-  .game-logo video {
+  body .main-content .game-logo video {
     height: 360px;
-    background-image: url("../img/hollow-knight-d.jpg");
-    background-repeat: no-repeat; }
-    .game-logo video:hover {
+    background-image: url("../img/hollow-knight-d.jpg"); }
+    body .main-content .game-logo video:hover {
       cursor: pointer;
       opacity: 0.9; }
 
-.menu {
+body header .menu {
   margin-top: 30px; }

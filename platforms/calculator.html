@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/calculator-style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
     <title>Calculator</title>
 
 </head>
@@ -12,7 +13,9 @@
 <body>
     
     <div class="main">
-        <input id="display" type="text" placeholder="0" name="display">
+        <form id="calc">
+            <input id="display" type="text" placeholder="0" name="display">
+        </form>
             <table>
                 <tr>
                     <td><input class=button type="button" value="C" onclick="resetf()"></td> 
