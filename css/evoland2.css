@@ -1,52 +1,48 @@
 html {
   overflow: scroll;
   overflow-x: hidden; }
-
-body {
-  background-color: #2e253a;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2e253a), to(#292929));
-  background: -webkit-linear-gradient(#2e253a, #292929);
-  background: -o-linear-gradient(#2e253a, #292929);
-  background: linear-gradient(#2e253a, #292929);
-  position: relative; }
-
-header {
-  width: 100vw;
-  height: 300px; }
-
-h1 {
-  color: white;
-  font-size: 70px;
-  text-shadow: 5px 5px 6px #000000;
-  margin-bottom: 0; }
-
-.menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
-  -ms-flex-line-pack: space-evenly;
-  align-content: space-evenly;
-  background-color: rgba(46, 37, 58, 0.5);
-  padding: 10px 0 10px 0;
-  magin-top: 30px;
-  border: none;
-  width: 100%;
-  -webkit-box-shadow: 0 20px 20px -20px #ffffff;
-  box-shadow: 0 20px 20px -20px #ffffff; }
-  .menu i {
-    font-size: 40px;
-    color: white;
-    text-shadow: 5px 4px 5px #000000; }
-    .menu i:hover {
-      color: darkgrey; }
+  html body {
+    background-color: #2e253a;
+    background: -webkit-gradient(linear, left top, left bottom, from(#2e253a), to(#292929));
+    background: -webkit-linear-gradient(#2e253a, #292929);
+    background: -o-linear-gradient(#2e253a, #292929);
+    background: linear-gradient(#2e253a, #292929);
+    position: relative; }
+    html body header {
+      width: 100vw;
+      height: 300px; }
+      html body header h1 {
+        color: white;
+        font-size: 70px;
+        text-shadow: 5px 5px 6px #000000;
+        margin-bottom: 0; }
+    html body .menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-line-pack: center;
+      align-content: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+      -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+      background-color: rgba(46, 37, 58, 0.5);
+      padding: 10px 0 10px 0;
+      magin-top: 30px;
+      border: none;
+      width: 100%;
+      -webkit-box-shadow: 0 20px 20px -20px #ffffff;
+      box-shadow: 0 20px 20px -20px #ffffff; }
+      html body .menu i {
+        font-size: 40px;
+        color: white;
+        text-shadow: 5px 4px 5px #000000; }
+        html body .menu i:hover {
+          color: darkgrey; }
 
 .main-content {
   display: -webkit-box;

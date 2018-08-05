@@ -1,9 +1,9 @@
-@import main-structure.sass
+@import mixins.sass
 
 +main-structure
-+particles
-+platform-grid
++platform-structure
 +text-font
++particles
 
 header
 
@@ -16,31 +16,32 @@ header
     background-repeat: no-repeat
     background-position-x: 220px
 
-.searchbar   
+    .searchbar   
 
-    input
+        input
 
-        width: 300px
-        box-sizing: border-box
-        border: 2px solid #ccc
-        border-radius: 50px
-        border: none
-        font-family: Montserrat-Light
-        font-size: 15px
-        background-image: url("../img/searchIcon.png")
-        background-position: 10px 10px 
-        background-repeat: no-repeat
-        padding: 12px 20px 12px 40px
-        -webkit-transition: width 0.4s ease-in-out
-        transition: width 0.4s ease-in-out
-        opacity: 0.6
+            width: 300px
+            box-sizing: border-box
+            border: 2px solid #ccc
+            border-radius: 50px
+            border: none
+            font-family: Montserrat-Light
+            font-size: 15px
+            background-image: url("../img/searchIcon.png")
+            background-position: 10px 10px 
+            background-repeat: no-repeat
+            padding: 12px 20px 12px 40px
+            -webkit-transition: width 0.4s ease-in-out
+            transition: width 0.4s ease-in-out
+            opacity: 0.6
         
-        &:hover 
+            &:hover 
 
-            width: 370px
+                width: 370px
 
-.menu
+html body header .menu
 
-    background-color: rgba(0,0,0,0.1)
+    background-color: rgba(0,0,0,0.3)
     margin-top: 30px
+
     
