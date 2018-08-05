@@ -14,9 +14,11 @@
             position: relative
         
             header 
-    
+                display: flex
+                flex-wrap: nowrap
                 width: 100vw
                 height: 300px
+                
         
                 h1
 
@@ -106,6 +108,7 @@
             .game-logo 
 
                 padding: 0px 10px 0 10px
+                z-index: 1
 
                 video
                     width: 720px
@@ -117,6 +120,7 @@
                     -o-transition: all 0.5s ease
                     -ms-transition: all 0.5s ease
                     transition: all 0.5s ease
+                    z-index: 1
 
                     &:hover
                         
@@ -133,6 +137,7 @@
                 overflow-x: hidden
                 padding-right: 20px
                 height: 407px
+                z-index: 1
         
                 .description-list1 
 
@@ -141,13 +146,17 @@
                     text-align: center
                     flex-direction: column
                     height: 410px
+                    background-color: rgba(43,39,47,0.9)
+                    
+                    
 
                     a 
 
                         color: white
                         text-decoration: none
                         &:hover 
-                        color: darkgray
+
+                            color: darkgray
 
                     .emphasize 
 
@@ -191,12 +200,19 @@
             width: 100%
             box-shadow: 0 20px 20px -20px white
             margin: auto
+            a
+                p
+                &:hover
+                    color: darkgray
+
             
             .calc-icon
 
                 i
 
                     font-size: 25px
+                    &:hover
+                        color: darkgray
 
 
 
@@ -208,7 +224,7 @@
         font-family: Montserrat-Light
         src: url("../fonts/Montserrat-Light.ttf")
 
-    h1, h2, p, a
+    h1, h2, h3, p, a
 
         font-family: Montserrat-Light
 
@@ -237,7 +253,7 @@
             position: absolute
             top: 0
             left: 0
-            z-index: -1
+            z-index: 0
 
 =platform-structure
 
@@ -255,11 +271,11 @@
         flex-wrap: wrap
         padding: 80px 10% 40px 10%
         
-
         .action, .adventure, .rpg, .strategy, .multiplayer
             
             width: 400px
             height: 250px
+            margin: 30px 0 30px 0
             box-shadow: 0 0 25px 0px #000000
             -webkit-filter: contrast(100%)
             -webkit-transition: all 1s ease
@@ -267,6 +283,7 @@
             -o-transition: all 1s ease
             -ms-transition: all 1s ease
             transition: all 1s ease
+            z-index: 1
             &:hover
     
                 -webkit-filter: contrast(115%)

@@ -9,6 +9,11 @@ html {
     background: linear-gradient(#2e253a, #292929);
     position: relative; }
     html body header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
       width: 100vw;
       height: 300px; }
       html body header h1 {
@@ -80,7 +85,8 @@ html {
         color: white;
         margin-bottom: 25px; }
     html .main-content .game-logo {
-      padding: 0px 10px 0 10px; }
+      padding: 0px 10px 0 10px;
+      z-index: 1; }
       html .main-content .game-logo video {
         width: 720px;
         height: 407px;
@@ -91,7 +97,8 @@ html {
         -moz-transition: all 0.5s ease;
         -o-transition: all 0.5s ease;
         -ms-transition: all 0.5s ease;
-        transition: all 0.5s ease; }
+        transition: all 0.5s ease;
+        z-index: 1; }
         html .main-content .game-logo video:hover {
           -webkit-filter: contrast(115%);
           -webkit-transform: scale(1.1);
@@ -104,7 +111,8 @@ html {
       width: 500px;
       overflow-x: hidden;
       padding-right: 20px;
-      height: 407px; }
+      height: 407px;
+      z-index: 1; }
       html .main-content .game-description .description-list1 {
         -ms-flex-line-pack: center;
         align-content: center;
@@ -116,11 +124,13 @@ html {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        height: 410px; }
+        height: 410px;
+        background-color: rgba(43, 39, 47, 0.9); }
         html .main-content .game-description .description-list1 a {
           color: white;
-          text-decoration: none;
-          color: darkgray; }
+          text-decoration: none; }
+          html .main-content .game-description .description-list1 a:hover {
+            color: darkgray; }
         html .main-content .game-description .description-list1 .emphasize {
           font-size: 28px;
           text-shadow: 2px 2px 4px #000000;
@@ -168,14 +178,18 @@ html {
     -webkit-box-shadow: 0 20px 20px -20px white;
     box-shadow: 0 20px 20px -20px white;
     margin: auto; }
+    html .suggestions a:hover {
+      color: darkgray; }
     html .suggestions .calc-icon i {
       font-size: 25px; }
+      html .suggestions .calc-icon i:hover {
+        color: darkgray; }
 
 @font-face {
   font-family: Montserrat-Light;
   src: url("../fonts/Montserrat-Light.ttf"); }
 
-h1, h2, p, a {
+h1, h2, h3, p, a {
   font-family: Montserrat-Light; }
 
 h1 {
@@ -194,9 +208,9 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1; }
+    z-index: 0; }
 
-header {
+body header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -211,7 +225,7 @@ header {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
-  header .searchbar {
+  body header .searchbar {
     width: 300px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -229,7 +243,7 @@ header {
     transition: width 0.4s ease-in-out;
     opacity: 0.6;
     margin-top: 40px; }
-    header .searchbar:hover {
+    body header .searchbar:hover {
       width: 370px; }
 
 body .main-content .game-logo {
