@@ -178,72 +178,55 @@ html body {
   background: -o-linear-gradient(#171a21, #292929);
   background: linear-gradient(#171a21, #292929); }
 
-body .action, .adventure, .rpg, .strategy, .multiplayer {
-  width: 400px;
-  height: 250px;
-  -webkit-box-shadow: 0 0 25px 0px #000000;
-  box-shadow: 0 0 25px 0px #000000;
-  -webkit-filter: contrast(100%);
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease; }
-  body .action:hover, .adventure:hover, .rpg:hover, .strategy:hover, .multiplayer:hover {
-    -webkit-filter: contrast(115%);
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05);
-    -webkit-transition: 0.5s ease;
-    -o-transition: 0.5s ease;
-    transition: 0.5s ease; }
-  body .action p, .adventure p, .rpg p, .strategy p, .multiplayer p {
-    font-size: 20px;
-    text-align: center;
-    color: white; }
-
-.genres1 {
+body .genres {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: justify;
-  align-content: space-between;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -ms-flex-line-pack: space-evenly;
+  align-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding: 120px 10% 0 10%; }
-  .genres1 .action {
+  padding: 80px 10% 40px 10%; }
+  body .genres .action, body .genres .adventure, body .genres .rpg, body .genres .strategy, body .genres .multiplayer {
+    width: 400px;
+    height: 250px;
+    -webkit-box-shadow: 0 0 25px 0px #000000;
+    box-shadow: 0 0 25px 0px #000000;
+    -webkit-filter: contrast(100%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease; }
+    body .genres .action:hover, body .genres .adventure:hover, body .genres .rpg:hover, body .genres .strategy:hover, body .genres .multiplayer:hover {
+      -webkit-filter: contrast(115%);
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.05);
+      transform: scale(1.05);
+      -webkit-transition: 0.5s ease;
+      -o-transition: 0.5s ease;
+      transition: 0.5s ease; }
+    body .genres .action p, body .genres .adventure p, body .genres .rpg p, body .genres .strategy p, body .genres .multiplayer p {
+      font-size: 40px;
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 2px #000000; }
+  body .genres .action {
     background-image: url("../img/action.jpg"); }
-  .genres1 .adventure {
+  body .genres .adventure {
     background-image: url("../img/adventure.jpg"); }
-  .genres1 .rpg {
+  body .genres .rpg {
     background-image: url("../img/rpg.png"); }
-
-.genres2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: justify;
-  align-content: space-between;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding: 30px 20% 0 20%; }
-  .genres2 .strategy {
+  body .genres .strategy {
     background-image: url("../img/strategy.jpg"); }
-  .genres2 .multiplayer {
+  body .genres .multiplayer {
     background-image: url("../img/multiplayer.jpg"); }
 
 @font-face {

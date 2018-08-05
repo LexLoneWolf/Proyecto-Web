@@ -179,6 +179,8 @@
                     font-size: 25px
 
 
+
+
 =text-font
 
     @font-face 
@@ -224,64 +226,48 @@
         background-color: #171a21 // For browsers that not support gradients
         background: linear-gradient(#171a21, #292929)
 
-    body .action, .adventure, .rpg, .strategy, .multiplayer
-            
-        width: 400px
-        height: 250px
-        margin 0 30px 0 30px
-        box-shadow: 0 0 25px 0px #000000
-        -webkit-filter: contrast(100%)
-        -webkit-transition: all 1s ease
-        -moz-transition: all 1s ease
-        -o-transition: all 1s ease
-        -ms-transition: all 1s ease
-        transition: all 1s ease
-        &:hover
-    
-            -webkit-filter: contrast(115%)
-            -webkit-transform: scale(1.1)
-            -ms-transform: scale(1.05)
-            transform: scale(1.05)
-            transition: 0.5s ease
-            
-        p
-            
-            font-size: 20px
-            text-align: center
-            color: white
-
-
-    .genres1
+    body .genres
 
         display: flex
-        align-content: space-between
-        justify-content: space-between
+        align-content: space-evenly
+        justify-content: space-evenly
         flex-direction: row
         flex-wrap: wrap
-        padding: 120px 10% 0 10%
+        padding: 80px 10% 40px 10%
         
+
+        .action, .adventure, .rpg, .strategy, .multiplayer
+            
+            width: 400px
+            height: 250px
+            box-shadow: 0 0 25px 0px #000000
+            -webkit-filter: contrast(100%)
+            -webkit-transition: all 1s ease
+            -moz-transition: all 1s ease
+            -o-transition: all 1s ease
+            -ms-transition: all 1s ease
+            transition: all 1s ease
+            &:hover
+    
+                -webkit-filter: contrast(115%)
+                -webkit-transform: scale(1.1)
+                -ms-transform: scale(1.05)
+                transform: scale(1.05)
+                transition: 0.5s ease
+            
+            p
+            
+                font-size: 40px
+                text-align: center
+                color: white
+                text-shadow: 2px 2px 2px #000000
+
         .action
             background-image: url('../img/action.jpg')
         .adventure
             background-image: url('../img/adventure.jpg')
-            
         .rpg
             background-image: url('../img/rpg.png')
-        
-            
-        
-
-        
-        
-    .genres2
-
-        display: flex
-        align-content: space-between
-        justify-content: space-between
-        flex-direction: row
-        flex-wrap: wrap
-        padding: 30px 20% 0 20%
-
         .strategy
             background-image: url('../img/strategy.jpg')
         .multiplayer
